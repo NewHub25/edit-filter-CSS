@@ -51,7 +51,7 @@ function buildFilter(input, _screen) {
 
 copy.onclick = function (e) {
   navigator.clipboard
-    .writeText(filterToCopy.value)
+    .writeText(filterToCopy.value + ';')
     .then(() => {
       this.classList.add("copied");
       setTimeout(() => this.classList.remove("copied"), 1000);
