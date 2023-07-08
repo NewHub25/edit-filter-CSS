@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filters CSS</title>
+    <link rel="stylesheet" href="/filters.css" />
+    <script src="./filter-change.js" defer></script>
+  </head>
+  <body>
+    <main class="filters">
+      <header class="filters__header"></header>
+      <nav class="filters__nav">
+        <input id="colorText" type="text" value="#000" />
+        <input id="colorPaint" type="color" />
+      </nav>
+      <section class="filters__section">
+        <article class="filters__article">
+          <input
+            class="filters__input blur"
+            type="range"
+            min="0"
+            max="20"
+            value="0"
+            data-unit="px"
+            data-default-value="0"
+            step="5"
+          /><span class="filters__span_data">0px</span
+          ><span class="filters__span">blur</span>
+        </article>
+        <article class="filters__article">
+          <input
+            class="filters__input hue"
+            type="range"
+            min="0"
+            max="360"
+            value="0"
+            data-unit="deg"
+            data-default-value="0"
+            step="5"
+          /><span class="filters__span_data">0deg</span
+          ><span class="filters__span">hue</span>
+        </article>
+        <article class="filters__article">
+          <input
+            class="filters__input brightness"
+            type="range"
+            min="0"
+            max="200"
+            value="100"
+            data-unit="%"
+            data-default-value="100"
+            step="5"
+          /><span class="filters__span_data">100%</span
+          ><span class="filters__span">brightness</span>
+        </article>
+        <article class="filters__article">
+          <input
+            class="filters__input contrast"
+            type="range"
+            min="0"
+            max="200"
+            value="100"
+            data-unit="%"
+            data-default-value="100"
+            step="5"
+          /><span class="filters__span_data">100%</span
+          ><span class="filters__span">contrast</span>
+        </article>
+        <article class="filters__article">
+          <input
+            class="filters__input grayscale"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            data-unit="%"
+            data-default-value="0"
+            step="5"
+          /><span class="filters__span_data">0%</span
+          ><span class="filters__span">grayscale</span>
+        </article>
+        <article class="filters__article">
+          <input
+            class="filters__input invert"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            data-unit="%"
+            data-default-value="0"
+            step="5"
+          /><span class="filters__span_data">0%</span
+          ><span class="filters__span">invert</span>
+        </article>
+        <article class="filters__article">
+          <input
+            class="filters__input opacity"
+            type="range"
+            min="0"
+            max="100"
+            value="100"
+            data-unit="%"
+            data-default-value="100"
+            step="5"
+          /><span class="filters__span_data">100%</span
+          ><span class="filters__span">opacity</span>
+        </article>
+        <article class="filters__article">
+          <input
+            class="filters__input saturate"
+            type="range"
+            min="0"
+            max="200"
+            value="100"
+            data-unit="%"
+            data-default-value="100"
+            step="5"
+          /><span class="filters__span_data">100%</span
+          ><span class="filters__span">saturate</span>
+        </article>
+        <article class="filters__article">
+          <input
+            class="filters__input sepia"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            data-unit="%"
+            data-default-value="0"
+            step="5"
+          /><span class="filters__span_data">0%</span
+          ><span class="filters__span">sepia</span>
+        </article>
+      </section>
+      <footer class="filters__footer">
+        <textarea id="filterToCopy" disabled></textarea>
+        <button id="copy">Copy</button>
+      </footer>
+    </main>
+  </body>
+</html>

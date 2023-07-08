@@ -1,0 +1,16 @@
+-const filters_props = {blur:[0,20,0,'px'],hue:[0,360,0,'deg'],brightness:[0,200,100,'%'], contrast:[0,200,100,'%'],grayscale:[0,100,0,'%'],invert:[0,100,0,'%'], opacity:[0,100,100,'%'],saturate:[0,200,100,'%'],sepia:[0,100,0,'%']}
+
+main.filters
+  header.filters__header
+  nav.filters__nav
+    input#colorText(type="text", value="#000")
+    input#colorPaint(type="color")
+  section.filters__section
+    each v,k in filters_props
+      article.filters__article
+        input(class=`filters__input ${k}` type="range" min=v[0] max=v[1] value=v[2] data-unit=v[3] data-default-value=v[2] step="5")
+        span.filters__span_data #{v[2] + v[3]}
+        span.filters__span #{k}
+  footer.filters__footer
+    textarea#filterToCopy(disabled)
+    button#copy Copy

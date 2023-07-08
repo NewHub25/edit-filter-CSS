@@ -1,0 +1,1 @@
+# This page allows you to color in conjunction with the CSS FILTER property, for example an SVG image that you download in black or white.
