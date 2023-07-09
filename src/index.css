@@ -2,7 +2,8 @@
   --gray: #aaa;
   --output: #000;
 }
-button {
+button,
+[type="reset"] {
   border: none;
   background-color: #333;
   color: #eee;
@@ -69,10 +70,10 @@ button {
   height: 3rem;
   resize: none;
 }
-#copy {
+.filters__button{
   position: relative;
   padding: 0.2rem;
-  width: 50%;
+  width: 40%;
 }
 #copy.copied::after {
   content: "Copied";

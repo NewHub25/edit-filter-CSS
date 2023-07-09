@@ -8,7 +8,7 @@
     <script src="./src/index.js" defer></script>
   </head>
   <body>
-    <main class="filters">
+    <form class="filters">
       <header class="filters__header"></header>
       <nav class="filters__nav">
         <input id="colorText" type="text" value="#000" />
@@ -111,7 +111,7 @@
             class="filters__input saturate"
             type="range"
             min="0"
-            max="200"
+            max="1000"
             value="100"
             data-unit="%"
             data-default-value="100"
@@ -135,8 +135,9 @@
       </section>
       <footer class="filters__footer">
         <textarea id="filterToCopy" disabled></textarea>
-        <button id="copy">Copy</button>
+        <button class="filters__button" id="copy">Copy</button>
+        <input class="filters__button" type="reset" value="Reset">
       </footer>
-    </main>
+    </form>
   </body>
 </html>
