@@ -65,12 +65,12 @@ button,
 .filters__footer {
   width: 90%;
 }
-#filterToCopy {
+textarea {
   width: 100%;
   height: 3rem;
   resize: none;
 }
-.filters__button{
+.filters__button {
   position: relative;
   padding: 0.2rem;
   width: 40%;
